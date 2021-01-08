@@ -1,4 +1,6 @@
-// tape ./index.js
+// tape ./tape-me.js
+
+import {plane} from '../src/plane.js'; // ???
 
 var test = require('tape');
 

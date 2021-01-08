@@ -3,4 +3,5 @@
 cd $(dirname $0)
 
 export NODE_PATH=$PWD/../B/src:${NODE_PATH:+:$NODE_PATH}
-mocha --require @babel/register src/plane.js
+mocha --require @babel/register test/mocha-me.js
+tape -r @babel/register test/tape-me.js
