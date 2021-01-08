@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd $(dirname $0)
+
+NODE_PATH=$PWD/../B/src mocha --require @babel/register src/plane.js

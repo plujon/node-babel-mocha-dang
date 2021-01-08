@@ -1,0 +1,36 @@
+----
+
+./A/run
+
+/mnt/B/src/pilot.js:1
+import {mask} from './mask.js'
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:1054:16)
+    at Module._compile (internal/modules/cjs/loader.js:1102:27)
+    at Module._compile (/usr/local/npm/lib/node_modules/@babel/register/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Object.newLoader [as .js] (/usr/local/npm/lib/node_modules/@babel/register/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/mnt/A/src/plane.js:2:1)
+    at Module._compile (internal/modules/cjs/loader.js:1138:30)
+    at Module._compile (/usr/local/npm/lib/node_modules/@babel/register/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Object.newLoader [as .js] (/usr/local/npm/lib/node_modules/@babel/register/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.exports.requireOrImport (/usr/local/npm/lib/node_modules/mocha/lib/esm-utils.js:20:12)
+    at Object.exports.loadFilesAsync (/usr/local/npm/lib/node_modules/mocha/lib/esm-utils.js:33:34)
+    at Mocha.loadFilesAsync (/usr/local/npm/lib/node_modules/mocha/lib/mocha.js:431:19)
+    at singleRun (/usr/local/npm/lib/node_modules/mocha/lib/cli/run-helpers.js:125:15)
+    at exports.runMocha (/usr/local/npm/lib/node_modules/mocha/lib/cli/run-helpers.js:190:10)
+    at Object.exports.handler (/usr/local/npm/lib/node_modules/mocha/lib/cli/run.js:362:11)
+    at /usr/local/npm/lib/node_modules/mocha/node_modules/yargs/lib/command.js:241:49
+
+----
