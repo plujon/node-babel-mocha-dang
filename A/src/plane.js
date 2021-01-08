@@ -1,2 +1,2 @@
 import {wing} from './wing.js'
-import {pilot} from 'pilot'
+import {pilot} from '../../B/src/pilot.js'
