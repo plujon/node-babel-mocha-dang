@@ -1,7 +1,7 @@
 // mocha ./mocha-me.mjs
 
 import {plane} from '../src/plane.mjs'
-import assert
+import assert from 'assert'
 
 describe('a', () => {
   it('should', () => {
