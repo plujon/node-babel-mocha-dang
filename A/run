@@ -2,4 +2,5 @@
 
 cd $(dirname $0)
 
-NODE_PATH=$PWD/../B/src mocha --require @babel/register src/plane.js
+export NODE_PATH=$PWD/../B/src:${NODE_PATH:+:$NODE_PATH}
+mocha --require @babel/register src/plane.js
