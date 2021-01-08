@@ -1,8 +1,8 @@
 // tape ./tape-me.js
 
-import {plane} from '../src/plane.js'; // ???
+import {plane} from '../src/plane.mjs'
 
-var test = require('tape');
+import tape
 
 test(('a'), (t) => {
   t.plan(1);
